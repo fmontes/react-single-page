@@ -1,0 +1,66 @@
+{
+  "name": "torbit",
+  "version": "0.0.0",
+  "dependencies": {
+    "flux": "^2.0.3",
+    "keymirror": "^0.1.1",
+    "superagent": "^1.2.0",
+    "superagent-es6-promise": "^1.0.0",
+    "d3": "^3.5.6",
+    "object-assign": "^3.0.0",
+    "react": "^0.14.0-beta1",
+    "react-dom": "^0.14.0-beta1",
+    "react-router": "^1.0.0-beta3",
+    "react-tools": "^0.13.3",
+    "reactify": "latest"
+  },
+  "devDependencies": {
+    "babel": "^5.6.23",
+    "babel-core": "^5.7.4",
+    "babel-plugin-object-assign": "^1.2.0",
+    "babelify": "^6.1.2",
+    "browser-sync": "latest",
+    "browserify-shim": "^3.8.0",
+    "del": "~0.1.3",
+    "gulp": "~3.8.8",
+    "gulp-autoprefixer": "~1.0.1",
+    "gulp-bower": "0.0.6",
+    "gulp-cache": "~0.2.4",
+    "gulp-imagemin": "latest",
+    "gulp-jshint": "~1.8.5",
+    "gulp-load-plugins": "~0.7.0",
+    "gulp-ruby-sass": "~0.7.1",
+    "gulp-size": "~1.1.0",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-uglify": "^1.0.2",
+    "gulp-useref": "~0.4.4",
+    "gulp-util": "~3.0.1",
+    "gulp-webserver": "latest",
+    "http-proxy-middleware": "^0.1.0",
+    "main-bower-files": "~2.6.2",
+    "parse-browserify": "^0.1.2",
+    "strip-debug": "^1.0.1",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "~2.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      [
+        "reactify",
+        {
+          "es6": true
+        }
+      ]
+    ]
+  },
+  "browser": {
+    "jquery": "./app/bower_components/jquery/dist/jquery.js"
+  },
+  "browserify-shim": {
+    "jquery": "$"
+  }
+}

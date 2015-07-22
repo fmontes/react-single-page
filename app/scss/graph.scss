@@ -1,0 +1,28 @@
+@import "./variables";
+.rules {
+
+    path {
+        stroke: $brand-primary;
+        fill: none;
+        stroke-width: 2;
+    }
+    .tick {
+        line {
+            stroke: $gray-lighter;
+        }
+    }
+    .domain {
+        fill: none;
+        stroke: $gray-dark;
+        stroke-width: 1;
+    }
+
+    .labels {
+        font-size: $font-size-small;
+        .tick {
+            line {
+                stroke: $gray-dark;
+            }
+        }
+    }
+}
